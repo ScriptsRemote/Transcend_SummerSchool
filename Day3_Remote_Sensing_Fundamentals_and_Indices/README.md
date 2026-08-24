@@ -6,16 +6,18 @@
 
 ## Sesiones / Sessions
 
-| Horario | Notebook | Instructores |
-|---|---|---|
-| 09:00 - 10:30 | [`01_long_term_surface_water_jrc.ipynb`](01_long_term_surface_water_jrc.ipynb) | Sebastian, Crhisthian |
-| 10:40 - 12:10 | [`02_water_quality_proxies.ipynb`](02_water_quality_proxies.ipynb) | Sebastian, Crhistian |
-| 14:00 - 15:30 | [`03_satellite_altimetry_shallow_lakes.ipynb`](03_satellite_altimetry_shallow_lakes.ipynb) | Sebastian |
-| 15:40 - 17:10 | [`04_digital_image_processing_in_gee.ipynb`](04_digital_image_processing_in_gee.ipynb) | Crhistian, Sebastian |
+| Horario | Notebook | Instructores | Colab |
+|---|---|---|---|
+| 09:00 - 10:30 | [`01_long_term_surface_water_jrc.ipynb`](01_long_term_surface_water_jrc.ipynb) | Sebastian, Crhisthian | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day3_Remote_Sensing_Fundamentals_and_Indices/01_long_term_surface_water_jrc.ipynb) |
+| 10:40 - 12:10 | [`02_water_quality_proxies.ipynb`](02_water_quality_proxies.ipynb) | Sebastian, Crhistian | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day3_Remote_Sensing_Fundamentals_and_Indices/02_water_quality_proxies.ipynb) |
+| 14:00 - 15:30 | [`03_satellite_altimetry_shallow_lakes.ipynb`](03_satellite_altimetry_shallow_lakes.ipynb) | Sebastian | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day3_Remote_Sensing_Fundamentals_and_Indices/03_satellite_altimetry_shallow_lakes.ipynb) |
+| 15:40 - 17:10 | [`04_digital_image_processing_in_gee.ipynb`](04_digital_image_processing_in_gee.ipynb) | Crhistian, Sebastian | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day3_Remote_Sensing_Fundamentals_and_Indices/04_digital_image_processing_in_gee.ipynb) |
 
 ## Detalle / Detail
 
 ### 1. Long Term Surface Water JRC
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day3_Remote_Sensing_Fundamentals_and_Indices/01_long_term_surface_water_jrc.ipynb)
 
 `09:00 - 10:30` · Sebastian, Crhisthian
 
@@ -23,17 +25,23 @@ Long-Term Surface Water Dynamics using global products. Practical exercise with 
 
 ### 2. Water Quality Proxies
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day3_Remote_Sensing_Fundamentals_and_Indices/02_water_quality_proxies.ipynb)
+
 `10:40 - 12:10` · Sebastian, Crhistian
 
 Water-Quality Proxies from Satellite Imagery
 
 ### 3. Satellite Altimetry Shallow Lakes
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day3_Remote_Sensing_Fundamentals_and_Indices/03_satellite_altimetry_shallow_lakes.ipynb)
+
 `14:00 - 15:30` · Sebastian
 
 Satellite altimetry principles, available products and pre-processing. Water level change in shallow lakes (example: Poopo)
 
 ### 4. Digital Image Processing in GEE
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day3_Remote_Sensing_Fundamentals_and_Indices/04_digital_image_processing_in_gee.ipynb)
 
 `15:40 - 17:10` · Crhistian, Sebastian
 

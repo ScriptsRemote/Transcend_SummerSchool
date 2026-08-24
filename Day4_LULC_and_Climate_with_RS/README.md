@@ -6,16 +6,18 @@
 
 ## Sesiones / Sessions
 
-| Horario | Notebook | Instructores |
-|---|---|---|
-| 09:00 - 10:30 | [`01_classification_fundamentals_and_algorithms.ipynb`](01_classification_fundamentals_and_algorithms.ipynb) | Christian, Sebastian integra WETSAT |
-| 10:40 - 12:10 | [`02_building_the_classification_input.ipynb`](02_building_the_classification_input.ipynb) | Crhistian |
-| 14:00 - 15:30 | [`03_training_mapping_and_accuracy.ipynb`](03_training_mapping_and_accuracy.ipynb) | Crhistian, Gustavo |
-| 15:40 - 17:10 | [`04_climate_products_et_and_water_balance.ipynb`](04_climate_products_et_and_water_balance.ipynb) | Crhisthian |
+| Horario | Notebook | Instructores | Colab |
+|---|---|---|---|
+| 09:00 - 10:30 | [`01_classification_fundamentals_and_algorithms.ipynb`](01_classification_fundamentals_and_algorithms.ipynb) | Christian, Sebastian integra WETSAT | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day4_LULC_and_Climate_with_RS/01_classification_fundamentals_and_algorithms.ipynb) |
+| 10:40 - 12:10 | [`02_building_the_classification_input.ipynb`](02_building_the_classification_input.ipynb) | Crhistian | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day4_LULC_and_Climate_with_RS/02_building_the_classification_input.ipynb) |
+| 14:00 - 15:30 | [`03_training_mapping_and_accuracy.ipynb`](03_training_mapping_and_accuracy.ipynb) | Crhistian, Gustavo | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day4_LULC_and_Climate_with_RS/03_training_mapping_and_accuracy.ipynb) |
+| 15:40 - 17:10 | [`04_climate_products_et_and_water_balance.ipynb`](04_climate_products_et_and_water_balance.ipynb) | Crhisthian | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day4_LULC_and_Climate_with_RS/04_climate_products_et_and_water_balance.ipynb) |
 
 ## Detalle / Detail
 
 ### 1. Classification Fundamentals and Algorithms
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day4_LULC_and_Climate_with_RS/01_classification_fundamentals_and_algorithms.ipynb)
 
 `09:00 - 10:30` · Christian, Sebastian integra WETSAT
 
@@ -23,17 +25,23 @@ Classification fundamentals and algorithms. Spectral patterns; K-Means, PCA, CAR
 
 ### 2. Building the Classification Input
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day4_LULC_and_Climate_with_RS/02_building_the_classification_input.ipynb)
+
 `10:40 - 12:10` · Crhistian
 
 Building the classification input. Spatial/temporal filtering, seasonal/annual cloudless mosaics, sample collection and training geometries, pixel-by-pixel extraction
 
 ### 3. Training Mapping and Accuracy
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day4_LULC_and_Climate_with_RS/03_training_mapping_and_accuracy.ipynb)
+
 `14:00 - 15:30` · Crhistian, Gustavo
 
 Training, mapping and accuracy assessment. Supervised classifiers in GEE; thematic map export; confusion matrix, overall accuracy, Kappa and K-fold validation. Change detection and irrigated areas (map algebra, dry/rainy season dynamics, rainfed vs irrigated signatures) - Se puede Integrar una introduccion de AquaCROP - Tim
 
 ### 4. Climate Products ET and Water Balance
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day4_LULC_and_Climate_with_RS/04_climate_products_et_and_water_balance.ipynb)
 
 `15:40 - 17:10` · Crhisthian
 

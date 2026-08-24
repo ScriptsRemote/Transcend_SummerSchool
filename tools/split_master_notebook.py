@@ -39,6 +39,26 @@ import re
 import string
 import sys
 
+# Repositorio publicado en GitHub: de aqui salen los enlaces "Open in Colab".
+# Si el repositorio cambia de nombre, duenio o rama, ajustar estas tres lineas
+# y volver a correr el script.
+GH_OWNER  = "ScriptsRemote"
+GH_REPO   = "Transcend_SummerSchool"
+GH_BRANCH = "main"
+
+COLAB_BADGE = "https://colab.research.google.com/assets/colab-badge.svg"
+
+
+def colab_url(rel_path: str) -> str:
+    """URL que abre en Colab el notebook `rel_path` (relativo a la raiz del repo)."""
+    return (f"https://colab.research.google.com/github/{GH_OWNER}/{GH_REPO}"
+            f"/blob/{GH_BRANCH}/{rel_path}")
+
+
+def colab_badge(rel_path: str) -> str:
+    return f"[![Open In Colab]({COLAB_BADGE})]({colab_url(rel_path)})"
+
+
 SLOTS = ["09:00 - 10:30", "10:40 - 12:10", "14:00 - 15:30", "15:40 - 17:10"]
 
 DAYS = [
@@ -162,8 +182,9 @@ def build(day: dict, k: int, topic: str) -> dict:
     who = instructors(topic)
     body = strip_instructors(topic)
     short = short_title(day["slugs"][k - 1])
+    rel = f"{day['folder']}/{k:02d}_{day['slugs'][k - 1]}.ipynb"
 
-    cells = [md(
+    cells = [md(colab_badge(rel)), md(
         f"# Day {day['n']} - {day['title']}\n"
         f"## Session {k}: {short}\n\n"
         f"| | |\n|---|---|\n"
@@ -203,17 +224,21 @@ def day_readme(day: dict, day_topics: list) -> str:
         "",
         "## Sesiones / Sessions",
         "",
-        "| Horario | Notebook | Instructores |",
-        "|---|---|---|",
+        "| Horario | Notebook | Instructores | Colab |",
+        "|---|---|---|---|",
     ]
     for k, (topic, slug) in enumerate(zip(day_topics, day["slugs"]), start=1):
         nb = f"{k:02d}_{slug}.ipynb"
-        lines.append(f"| {SLOTS[k - 1]} | [`{nb}`]({nb}) | {instructors(topic) or 'TBD'} |")
+        badge = colab_badge(day["folder"] + "/" + nb)
+        lines.append(
+            f"| {SLOTS[k - 1]} | [`{nb}`]({nb}) | {instructors(topic) or 'TBD'} | {badge} |")
 
     lines += ["", "## Detalle / Detail", ""]
     for k, (topic, slug) in enumerate(zip(day_topics, day["slugs"]), start=1):
         lines += [
             f"### {k}. {short_title(slug)}",
+            "",
+            colab_badge(f"{day['folder']}/{k:02d}_{slug}.ipynb"),
             "",
             f"`{SLOTS[k - 1]}` \u00b7 {instructors(topic) or 'TBD'}",
             "",

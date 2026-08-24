@@ -76,11 +76,25 @@ Días 6–9 (17–20 Oct): viaje de campo, workshop y retorno — fuera del alca
 
 ### Opción A — Google Colab (recomendado)
 
-Abra cualquier notebook directamente desde GitHub:
+Cada notebook abre en Colab con un clic: el botón ![Colab](https://colab.research.google.com/assets/colab-badge.svg) está en la primera celda del notebook y en la tabla de sesiones del README de cada día.
+
+Programa completo: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/00_Programme_Overview.ipynb)
+
+| Día | Sesiones |
+|---|---|
+| 1 · Hydrology & WEAP | [README con los 4 botones](Day1_Hydrology_and_WEAP_Modeling/README.md) |
+| 2 · Hydroeconomics & Water Mapping | [README con los 4 botones](Day2_Hydroeconomics_and_Water_Mapping/README.md) |
+| 3 · RS Fundamentals & Indices | [README con los 4 botones](Day3_Remote_Sensing_Fundamentals_and_Indices/README.md) |
+| 4 · LULC & Climate with RS | [README con los 4 botones](Day4_LULC_and_Climate_with_RS/README.md) |
+| 5 · Soil & Irrigation Efficiency | [README con los 4 botones](Day5_Soil_Monitoring_and_Irrigation_Efficiency/README.md) |
+
+El patrón del enlace, por si necesita armarlo a mano:
 
 ```
 https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/<ruta-del-notebook>
 ```
+
+⚠️ El botón solo funciona si **el repositorio es público**. En un repo privado, Colab pide al usuario permiso de GitHub y falla para quien no sea colaborador.
 
 Para leer los datos de `Assets/` desde Colab, clone el repositorio en la primera celda:
 
