@@ -1,0 +1,43 @@
+# --- documentos de planificacion / planning documents ----------------------
+# Borradores .docx del temario: se mantienen en local, no van al repositorio.
+Docs/
+
+# --- salidas de notebooks / notebook outputs --------------------------------
+.ipynb_checkpoints/
+outputs/
+*/outputs/
+
+# --- entornos / environments -------------------------------------------------
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+
+# --- credenciales / credentials ---------------------------------------------
+# nunca versionar claves de servicio de Earth Engine o Google Cloud
+*.json.key
+service_account*.json
+.env
+credentials/
+
+# --- datos pesados no versionables / large data ------------------------------
+# los assets se versionan explicitamente; todo lo demas se ignora
+Assets/**/tmp/
+Assets/**/*.tmp
+*.gpkg-shm
+*.gpkg-wal
+
+# --- WEAP --------------------------------------------------------------------
+*.bak
+WEAP_temp/
+
+# --- temporales de transferencia ---------------------------------------------
+_to_delete/
+_bundle*.zip
+
+# --- sistema / OS ------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*
