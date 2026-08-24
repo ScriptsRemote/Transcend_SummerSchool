@@ -50,8 +50,6 @@ SummerSchool/
     └── split_master_notebook.py      ← regenera los notebooks desde el Colab maestro
 ```
 
-`Docs/` está en `.gitignore`: se mantiene en local para la planificación, pero no se publica en GitHub.
-
 **Regla de oro / rule of thumb:** un notebook = un bloque horario de 90 minutos. Cada notebook es autocontenido y puede abrirse directamente en Colab.
 
 ---
