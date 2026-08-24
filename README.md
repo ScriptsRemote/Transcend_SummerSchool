@@ -79,20 +79,20 @@ Días 6–9 (17–20 Oct): viaje de campo, workshop y retorno — fuera del alca
 Abra cualquier notebook directamente desde GitHub:
 
 ```
-https://colab.research.google.com/github/<ORG>/TRANSCEND-SummerSchool/blob/main/<ruta-del-notebook>
+https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/<ruta-del-notebook>
 ```
 
 Para leer los datos de `Assets/` desde Colab, clone el repositorio en la primera celda:
 
 ```python
-!git clone --depth 1 https://github.com/<ORG>/TRANSCEND-SummerSchool.git
+!git clone --depth 1 https://github.com/ScriptsRemote/Transcend_SummerSchool.git
 ```
 
 ### Opción B — Local
 
 ```bash
-git clone https://github.com/<ORG>/TRANSCEND-SummerSchool.git
-cd TRANSCEND-SummerSchool
+git clone https://github.com/ScriptsRemote/Transcend_SummerSchool.git
+cd Transcend_SummerSchool
 python -m venv .venv && source .venv/bin/activate     # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 jupyter lab
@@ -104,7 +104,13 @@ Los notebooks de los días 2–4 usan GEE. Antes del curso, cada participante de
 
 1. Registrarse en [Earth Engine](https://earthengine.google.com/) (cuenta *noncommercial / Community*).
 2. Crear un Cloud Project y anotar su ID.
-3. Reemplazar `<tu-cloud-project>` en la celda de autenticación.
+3. Autenticarse al inicio del notebook con su propio project ID:
+
+```python
+import ee
+ee.Authenticate()
+ee.Initialize(project="<tu-cloud-project>")
+```
 
 ### Software adicional
 
@@ -136,7 +142,7 @@ python tools/split_master_notebook.py --master ruta/al/master.ipynb --dry-run
 python tools/split_master_notebook.py --master ruta/al/master.ipynb
 ```
 
-⚠️ Sin `--dry-run` el script **sobrescribe** los 20 notebooks generados. Los README y la carpeta `Assets/` nunca se tocan.
+⚠️ Sin `--dry-run` el script **sobrescribe** los 20 notebooks y los 5 `DayN/README.md`, porque su contenido se deriva por completo del maestro. Este README raíz, `Assets/` y `Docs/` nunca se tocan.
 
 ---
 

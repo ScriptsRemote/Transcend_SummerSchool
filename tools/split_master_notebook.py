@@ -22,8 +22,11 @@ Uso
 
 Descargar el maestro desde Colab: Archivo -> Descargar -> Descargar .ipynb
 
-AVISO: sin --dry-run, los notebooks generados se SOBRESCRIBEN. Los README y la
-carpeta Assets/ nunca se tocan.
+Tambien reescribe el README.md de cada carpeta de dia, porque su contenido se
+deriva por completo del maestro.
+
+AVISO: sin --dry-run, los 20 notebooks y los 5 README de dia se SOBRESCRIBEN.
+El README raiz, Assets/ y Docs/ nunca se tocan.
 """
 
 from __future__ import annotations
@@ -41,6 +44,7 @@ SLOTS = ["09:00 - 10:30", "10:40 - 12:10", "14:00 - 15:30", "15:40 - 17:10"]
 DAYS = [
     dict(n=1, date="2026-10-12", weekday="Monday / Lunes",
          folder="Day1_Hydrology_and_WEAP_Modeling",
+         theme="Hydrology fundamentals, WEAP modeling applied to agriculture and catchments",
          title="Hydrology & WEAP Modeling",
          entity="SEI",
          slugs=["hydrology_fundamentals_weap_structure",
@@ -49,6 +53,7 @@ DAYS = [
                 "weap_model_consolidation"]),
     dict(n=2, date="2026-10-13", weekday="Tuesday / Martes",
          folder="Day2_Hydroeconomics_and_Water_Mapping",
+         theme="Hydroeconomics of irrigated agriculture + surface water presence, dynamics and quality",
          title="Hydroeconomics & Water Mapping",
          entity="SEI / IMDEA",
          slugs=["agricultural_demand_and_economic_modeling",
@@ -57,6 +62,7 @@ DAYS = [
                 "platforms_gee_colab_and_qgis"]),
     dict(n=3, date="2026-10-14", weekday="Wednesday / Miercoles",
          folder="Day3_Remote_Sensing_Fundamentals_and_Indices",
+         theme="Sensors, spectral behaviour, vegetation/water indices and practical processing platforms",
          title="Fundamentals of Remote Sensing & Spectral Indices",
          entity="UoM",
          slugs=["long_term_surface_water_jrc",
@@ -65,6 +71,7 @@ DAYS = [
                 "digital_image_processing_in_gee"]),
     dict(n=4, date="2026-10-15", weekday="Thursday / Jueves",
          folder="Day4_LULC_and_Climate_with_RS",
+         theme="Classification algorithms, change detection, climate products, ET and water balance",
          title="Land Use / Land Cover & Climate with RS",
          entity="UoM",
          slugs=["classification_fundamentals_and_algorithms",
@@ -73,6 +80,7 @@ DAYS = [
                 "climate_products_et_and_water_balance"]),
     dict(n=5, date="2026-10-16", weekday="Friday / Viernes",
          folder="Day5_Soil_Monitoring_and_Irrigation_Efficiency",
+         theme="Predictive soil salinity models + automated drip irrigation and water-use efficiency",
          title="Soil Monitoring & Irrigation Efficiency",
          entity="IIAREN / PROSUCO",
          slugs=["soil_salinity_models_part1_fundamentals",
@@ -121,7 +129,8 @@ def strip_instructors(topic: str) -> str:
     if not found:
         return topic.strip()
     last = found[-1]
-    return (topic[:last.start()] + topic[last.end():]).strip(" -.–—\t")
+    out = topic[:last.start()] + topic[last.end():]
+    return " ".join(out.split()).strip(" -.–—")
 
 
 def short_title(slug: str) -> str:
@@ -179,6 +188,55 @@ def build(day: dict, k: int, topic: str) -> dict:
     return notebook(cells)
 
 
+def day_readme(day: dict, day_topics: list) -> str:
+    """README de una carpeta de dia, derivado del maestro.
+
+    Se construye linea por linea, sin indentacion: cualquier sangria de 4+
+    espacios haria que Markdown lo interpretara como bloque de codigo.
+    """
+    lines = [
+        f"# Day {day['n']} \u2014 {day['title']}",
+        "",
+        f"**{day['date']} ({day['weekday']})** \u00b7 {day['entity']}",
+        "",
+        f"> {day['theme']}",
+        "",
+        "## Sesiones / Sessions",
+        "",
+        "| Horario | Notebook | Instructores |",
+        "|---|---|---|",
+    ]
+    for k, (topic, slug) in enumerate(zip(day_topics, day["slugs"]), start=1):
+        nb = f"{k:02d}_{slug}.ipynb"
+        lines.append(f"| {SLOTS[k - 1]} | [`{nb}`]({nb}) | {instructors(topic) or 'TBD'} |")
+
+    lines += ["", "## Detalle / Detail", ""]
+    for k, (topic, slug) in enumerate(zip(day_topics, day["slugs"]), start=1):
+        lines += [
+            f"### {k}. {short_title(slug)}",
+            "",
+            f"`{SLOTS[k - 1]}` \u00b7 {instructors(topic) or 'TBD'}",
+            "",
+            strip_instructors(topic),
+            "",
+        ]
+
+    lines += [
+        "## Datos / Data",
+        "",
+        f"Los insumos de este dia van en [`../Assets/Day{day['n']}/`](../Assets/Day{day['n']}/).",
+        "Las capas compartidas con otros dias estan en [`../Assets/shared/`](../Assets/shared/).",
+        "",
+        "## Antes de la sesion / Before the session",
+        "",
+        "- [ ] Instalar las dependencias de `requirements.txt`",
+        f"- [ ] Verificar el acceso a los datos en `Assets/Day{day['n']}/`",
+        "- [ ] Revisar las referencias de cada notebook",
+        "",
+    ]
+    return "\n".join(lines)
+
+
 # ------------------------------------------------------------------------ main
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__,
@@ -208,6 +266,14 @@ def main() -> int:
     written = 0
     for day in DAYS:
         folder = args.root / day["folder"]
+        readme = folder / "README.md"
+        if args.dry_run:
+            print(f"[dry-run] {'sobrescribiria' if readme.exists() else 'crearia'}: "
+                  f"{readme.relative_to(args.root)}")
+        else:
+            folder.mkdir(parents=True, exist_ok=True)
+            readme.write_text(day_readme(day, topics[day["n"]]), encoding="utf-8")
+            written += 1
         for k, (topic, slug) in enumerate(zip(topics[day["n"]], day["slugs"]), start=1):
             path = folder / f"{k:02d}_{slug}.ipynb"
             if args.dry_run:
@@ -222,7 +288,7 @@ def main() -> int:
     if args.dry_run:
         print("\nNada fue escrito. Quite --dry-run para aplicar.")
     else:
-        print(f"{written} notebooks escritos en {args.root}")
+        print(f"{written} archivos escritos en {args.root}")
     return 0
 
 
