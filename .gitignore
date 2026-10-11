@@ -1,6 +1,7 @@
 # --- documentos de planificacion / planning documents ----------------------
 # Borradores .docx del temario: se mantienen en local, no van al repositorio.
 Docs/
+Base/
 
 # --- salidas de notebooks / notebook outputs --------------------------------
 .ipynb_checkpoints/
