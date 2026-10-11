@@ -5,7 +5,10 @@
 numpy>=1.26
 pandas>=2.2
 matplotlib>=3.8
+seaborn>=0.13            # Day 4
 scipy>=1.12
+requests>=2.31           # Day 3 (SWOT / PO.DAAC)
+gdown>=5.1               # Day 1 (descarga desde Google Drive)
 
 # --- geoespacial / geospatial -----------------------------------------------
 geopandas>=1.0
@@ -20,6 +23,7 @@ netCDF4>=1.6
 earthengine-api>=1.1
 geemap>=0.32
 folium>=0.16
+ipyleaflet>=0.19         # Day 4
 
 # --- clasificacion / classification (Day 4) ----------------------------------
 scikit-learn>=1.4

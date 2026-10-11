@@ -26,6 +26,7 @@ SummerSchool/
 ├── .gitattributes                    ← reglas de Git LFS para datos pesados
 │
 ├── 00_Programme_Overview.ipynb       ← introducción + cronograma completo
+├── Guia_Registro_GEE_TRANSCEND_ES.pdf ← guía de registro en Google Earth Engine
 │
 ├── Day1_Hydrology_and_WEAP_Modeling/
 │   ├── README.md
@@ -45,9 +46,11 @@ SummerSchool/
 │   ├── shared/                       ← capas usadas por más de un día
 │   └── Day1/ Day2/ Day3/ Day4/ Day5/
 │
-├── Docs/                             ← borradores .docx — IGNORADO por git
+├── Figures/                          ← imágenes de los notebooks, enlazadas por URL raw de GitHub
+│   └── Day2/ Day4/
+│
 └── tools/
-    └── split_master_notebook.py      ← regenera los notebooks desde el Colab maestro
+    └── split_master_notebook.py      ← generó la estructura inicial; no ejecutar (sobrescribe los notebooks)
 ```
 
 **Regla de oro / rule of thumb:** un notebook = un bloque horario de 90 minutos. Cada notebook es autocontenido y puede abrirse directamente en Colab.
@@ -114,7 +117,7 @@ jupyter lab
 
 Los notebooks de los días 2–4 usan GEE. Antes del curso, cada participante debe:
 
-1. Registrarse en [Earth Engine](https://earthengine.google.com/) (cuenta *noncommercial / Community*).
+1. Registrarse en [Earth Engine](https://earthengine.google.com/) (cuenta *noncommercial / Community*). Paso a paso en la [guía de registro](Guia_Registro_GEE_TRANSCEND_ES.pdf).
 2. Crear un Cloud Project y anotar su ID.
 3. Autenticarse al inicio del notebook con su propio project ID:
 
@@ -144,20 +147,6 @@ ee.Initialize(project="<tu-cloud-project>")
 
 ---
 
-## Regenerar los notebooks / Regenerating the notebooks
-
-El notebook maestro vive en Colab y define el programa. Para volver a fragmentarlo tras un cambio de temario:
-
-```bash
-# Colab: Archivo → Descargar → Descargar .ipynb
-python tools/split_master_notebook.py --master ruta/al/master.ipynb --dry-run
-python tools/split_master_notebook.py --master ruta/al/master.ipynb
-```
-
-⚠️ Sin `--dry-run` el script **sobrescribe** los 20 notebooks y los 5 `DayN/README.md`, porque su contenido se deriva por completo del maestro. Este README raíz, `Assets/` y `Docs/` nunca se tocan.
-
----
-
 ## Equipo / Team
 
 | Rol | Personas |
@@ -165,7 +154,7 @@ python tools/split_master_notebook.py --master ruta/al/master.ipynb
 | Coordinación general | Gustavo Ayala (SEI) |
 | Hidrología / WEAP | Gustavo Ayala, Camilo González (SEI) |
 | Hidroeconomía | Francesco Sapino (IMDEA Agua) |
-| Teledetección | Christhian Santana Cunha, Sebastián Palomino, Tim Foster (UoM) |
+| Teledetección | Christhian Cunha, Sebastián Palomino, Tim Foster (UoM) |
 | Suelos y riego | Roberto Miranda, Fanny Arragan Tancara, Wara Yampara (IIAREN–UMSA), PROSUCO |
 
 **Audiencia:** ingenieros y profesionales que trabajan o estudian temas relacionados con recursos hídricos (ALT, Univ. Puno, UGCK, UMSA–Facultad de Agronomía, SENAMHI, SENARI, IRD, PROSUCO, entre otros).
@@ -174,4 +163,10 @@ python tools/split_master_notebook.py --master ruta/al/master.ipynb
 
 ## Licencia / License
 
-Por definir antes de publicar el repositorio. Sugerencia: **CC BY 4.0** para el material didáctico y **MIT** para el código.
+Todo el material de este repositorio (notebooks, código, figuras y datos) es **público** y se distribuye bajo la licencia [**CC BY 4.0**](https://creativecommons.org/licenses/by/4.0/deed.es): puede usarse, copiarse, adaptarse y redistribuirse libremente, incluso con fines comerciales, **siempre que se cite la fuente** como parte del proyecto TRANSCEND.
+
+*All material in this repository is public under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/): you may use, share and adapt it freely, provided you cite it as part of the TRANSCEND project.*
+
+**Cómo citar / How to cite:**
+
+> TRANSCEND — 2nd Summer School 2026: Titicaca–Desaguadero–Poopó (TDPS) basins — water resources, remote sensing and irrigated agriculture. SEI, University of Manchester, IMDEA Agua, IIAREN–UMSA, PROSUCO. La Paz, Bolivia, 12–16 October 2026. https://github.com/ScriptsRemote/Transcend_SummerSchool

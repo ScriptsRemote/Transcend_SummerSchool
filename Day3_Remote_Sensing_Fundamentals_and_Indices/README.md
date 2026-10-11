@@ -8,10 +8,10 @@
 
 | Horario | Notebook | Instructores | Colab |
 |---|---|---|---|
-| 09:00 - 10:30 | [`01_long_term_surface_water_jrc.ipynb`](01_long_term_surface_water_jrc.ipynb) | Sebastian, Crhisthian | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day3_Remote_Sensing_Fundamentals_and_Indices/01_long_term_surface_water_jrc.ipynb) |
-| 10:40 - 12:10 | [`02_water_quality_proxies.ipynb`](02_water_quality_proxies.ipynb) | Sebastian, Crhistian | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day3_Remote_Sensing_Fundamentals_and_Indices/02_water_quality_proxies.ipynb) |
+| 09:00 - 10:30 | [`01_long_term_surface_water_jrc.ipynb`](01_long_term_surface_water_jrc.ipynb) | Sebastian, Christhian Cunha | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day3_Remote_Sensing_Fundamentals_and_Indices/01_long_term_surface_water_jrc.ipynb) |
+| 10:40 - 12:10 | [`02_water_quality_proxies.ipynb`](02_water_quality_proxies.ipynb) | Sebastian, Christhian Cunha | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day3_Remote_Sensing_Fundamentals_and_Indices/02_water_quality_proxies.ipynb) |
 | 14:00 - 15:30 | [`03_satellite_altimetry_shallow_lakes.ipynb`](03_satellite_altimetry_shallow_lakes.ipynb) | Sebastian | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day3_Remote_Sensing_Fundamentals_and_Indices/03_satellite_altimetry_shallow_lakes.ipynb) |
-| 15:40 - 17:10 | [`04_digital_image_processing_in_gee.ipynb`](04_digital_image_processing_in_gee.ipynb) | Crhistian, Sebastian | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day3_Remote_Sensing_Fundamentals_and_Indices/04_digital_image_processing_in_gee.ipynb) |
+| 15:40 - 17:10 | [`04_digital_image_processing_in_gee.ipynb`](04_digital_image_processing_in_gee.ipynb) | Christhian Cunha, Sebastian | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day3_Remote_Sensing_Fundamentals_and_Indices/04_digital_image_processing_in_gee.ipynb) |
 
 ## Detalle / Detail
 
@@ -19,7 +19,7 @@
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day3_Remote_Sensing_Fundamentals_and_Indices/01_long_term_surface_water_jrc.ipynb)
 
-`09:00 - 10:30` · Sebastian, Crhisthian
+`09:00 - 10:30` · Sebastian, Christhian Cunha
 
 Análisis de la dinámica temporal de los cuerpos de agua superficiales mediante productos satelitales globales. Ejercicio práctico utilizando el conjunto de datos JRC Global Surface Water para explorar y caracterizar los cambios históricos en la extensión y permanencia del agua superficial.
 
@@ -27,7 +27,7 @@ Análisis de la dinámica temporal de los cuerpos de agua superficiales mediante
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day3_Remote_Sensing_Fundamentals_and_Indices/02_water_quality_proxies.ipynb)
 
-`10:40 - 12:10` · Sebastian, Crhistian
+`10:40 - 12:10` · Sebastian, Christhian Cunha
 
 Exploración de la calidad superficial del agua mediante imágenes satelitales de Sentinel-2 y MODIS Aqua. Ejercicio práctico en el Lago Titicaca (Bolivia) para analizar indicadores relacionados con la clorofila-a, turbidez, sólidos suspendidos y temperatura superficial, utilizando índices espectrales y productos satelitales derivados.
 
@@ -43,7 +43,7 @@ Análisis de la dinámica de lagos someros mediante observaciones de la misión 
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day3_Remote_Sensing_Fundamentals_and_Indices/04_digital_image_processing_in_gee.ipynb)
 
-`15:40 - 17:10` · Crhistian, Sebastian
+`15:40 - 17:10` · Christhian Cunha, Sebastian
 
 Introducción al procesamiento digital de imágenes satelitales mediante Google Earth Engine (GEE). Ejercicio práctico para explorar colecciones de imágenes y sus metadatos, realizar ajustes de visualización, generar composiciones de bandas, calcular índices espectrales y aplicar técnicas de análisis espacial, incluyendo estadísticas zonales y clasificación mediante umbrales.
 

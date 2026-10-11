@@ -9,9 +9,9 @@
 | Horario | Notebook | Instructores | Colab |
 |---|---|---|---|
 | 09:00 - 10:30 | [`01_agricultural_demand_and_economic_modeling.ipynb`](01_agricultural_demand_and_economic_modeling.ipynb) | Gustavo, Francesco | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day2_Hydroeconomics_and_Water_Mapping/01_agricultural_demand_and_economic_modeling.ipynb) |
-| 10:40 - 12:10 | [`02_sensors_and_spectral_behaviour.ipynb`](02_sensors_and_spectral_behaviour.ipynb) | Christhian, Sebastian | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day2_Hydroeconomics_and_Water_Mapping/02_sensors_and_spectral_behaviour.ipynb) |
-| 14:00 - 15:30 | [`03_vegetation_and_water_spectral_indices.ipynb`](03_vegetation_and_water_spectral_indices.ipynb) | Christhian, Sebastian | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day2_Hydroeconomics_and_Water_Mapping/03_vegetation_and_water_spectral_indices.ipynb) |
-| 15:40 - 17:10 | [`04_platforms_gee_colab_and_qgis.ipynb`](04_platforms_gee_colab_and_qgis.ipynb) | Christhian, Sebastian | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day2_Hydroeconomics_and_Water_Mapping/04_platforms_gee_colab_and_qgis.ipynb) |
+| 10:40 - 12:10 | [`02_sensors_and_spectral_behaviour.ipynb`](02_sensors_and_spectral_behaviour.ipynb) | Christhian Cunha, Sebastian | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day2_Hydroeconomics_and_Water_Mapping/02_sensors_and_spectral_behaviour.ipynb) |
+| 14:00 - 15:30 | [`03_vegetation_and_water_spectral_indices.ipynb`](03_vegetation_and_water_spectral_indices.ipynb) | Christhian Cunha, Sebastian | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day2_Hydroeconomics_and_Water_Mapping/03_vegetation_and_water_spectral_indices.ipynb) |
+| 15:40 - 17:10 | [`04_platforms_gee_colab_and_qgis.ipynb`](04_platforms_gee_colab_and_qgis.ipynb) | Christhian Cunha, Sebastian | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day2_Hydroeconomics_and_Water_Mapping/04_platforms_gee_colab_and_qgis.ipynb) |
 
 ## Detalle / Detail
 
@@ -27,7 +27,7 @@ Representation of agricultural demand in catchments (yield, production). Economi
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day2_Hydroeconomics_and_Water_Mapping/02_sensors_and_spectral_behaviour.ipynb)
 
-`10:40 - 12:10` · Christhian, Sebastian
+`10:40 - 12:10` · Christhian Cunha, Sebastian
 
 Data acquisition and sensor systems. Spatial, spectral, radiometric and temporal resolution (Landsat, Sentinel, MODIS). Spectral behaviour of vegetation, soil and water
 
@@ -35,7 +35,7 @@ Data acquisition and sensor systems. Spatial, spectral, radiometric and temporal
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day2_Hydroeconomics_and_Water_Mapping/03_vegetation_and_water_spectral_indices.ipynb)
 
-`14:00 - 15:30` · Christhian, Sebastian
+`14:00 - 15:30` · Christhian Cunha, Sebastian
 
 Vegetation and water spectral indices (NDVI, EVI, SAVI, NDWI, NDMI): what each measures and when to use it. Index time series for crop phenology and water stress
 
@@ -43,7 +43,7 @@ Vegetation and water spectral indices (NDVI, EVI, SAVI, NDWI, NDMI): what each m
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day2_Hydroeconomics_and_Water_Mapping/04_platforms_gee_colab_and_qgis.ipynb)
 
-`15:40 - 17:10` · Christhian, Sebastian
+`15:40 - 17:10` · Christhian Cunha, Sebastian
 
 Platforms, accounts and installation. GEE Community registration, cloud project, API authentication, first commands. Google Colab, QGIS 3.44 LTR and shared script repository
 
