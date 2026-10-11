@@ -6,12 +6,12 @@
 
 ## Sesiones / Sessions
 
-| Horario | Notebook | Instructores | Colab |
-|---|---|---|---|
-| 09:00 - 10:30 | [`01_long_term_surface_water_jrc.ipynb`](01_long_term_surface_water_jrc.ipynb) | Sebastian, Christhian Cunha | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day3_Remote_Sensing_Fundamentals_and_Indices/01_long_term_surface_water_jrc.ipynb) |
-| 10:40 - 12:10 | [`02_water_quality_proxies.ipynb`](02_water_quality_proxies.ipynb) | Sebastian, Christhian Cunha | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day3_Remote_Sensing_Fundamentals_and_Indices/02_water_quality_proxies.ipynb) |
-| 14:00 - 15:30 | [`03_satellite_altimetry_shallow_lakes.ipynb`](03_satellite_altimetry_shallow_lakes.ipynb) | Sebastian | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day3_Remote_Sensing_Fundamentals_and_Indices/03_satellite_altimetry_shallow_lakes.ipynb) |
-| 15:40 - 17:10 | [`04_digital_image_processing_in_gee.ipynb`](04_digital_image_processing_in_gee.ipynb) | Christhian Cunha, Sebastian | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day3_Remote_Sensing_Fundamentals_and_Indices/04_digital_image_processing_in_gee.ipynb) |
+| Horario | Notebook | Instructores | Colab | Colab (español) |
+|---|---|---|---|---|
+| 09:00 - 10:30 | [`01_long_term_surface_water_jrc.ipynb`](01_long_term_surface_water_jrc.ipynb) | Sebastian, Christhian Cunha | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day3_Remote_Sensing_Fundamentals_and_Indices/01_long_term_surface_water_jrc.ipynb) | — |
+| 10:40 - 12:10 | [`02_water_quality_proxies.ipynb`](02_water_quality_proxies.ipynb) | Sebastian, Christhian Cunha | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day3_Remote_Sensing_Fundamentals_and_Indices/02_water_quality_proxies.ipynb) | — |
+| 14:00 - 15:30 | [`03_satellite_altimetry_shallow_lakes.ipynb`](03_satellite_altimetry_shallow_lakes.ipynb) | Sebastian | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day3_Remote_Sensing_Fundamentals_and_Indices/03_satellite_altimetry_shallow_lakes.ipynb) | — |
+| 15:40 - 17:10 | [`04_digital_image_processing_in_gee.ipynb`](04_digital_image_processing_in_gee.ipynb) | Christhian Cunha, Sebastian | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day3_Remote_Sensing_Fundamentals_and_Indices/04_digital_image_processing_in_gee.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day3_Remote_Sensing_Fundamentals_and_Indices/04_digital_image_processing_in_gee_es.ipynb) |
 
 ## Detalle / Detail
 
@@ -42,6 +42,8 @@ Análisis de la dinámica de lagos someros mediante observaciones de la misión 
 ### 4. Digital Image Processing in GEE
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day3_Remote_Sensing_Fundamentals_and_Indices/04_digital_image_processing_in_gee.ipynb)
+
+**Versión en español:** [`04_digital_image_processing_in_gee_es.ipynb`](04_digital_image_processing_in_gee_es.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day3_Remote_Sensing_Fundamentals_and_Indices/04_digital_image_processing_in_gee_es.ipynb)
 
 `15:40 - 17:10` · Christhian Cunha, Sebastian
 
