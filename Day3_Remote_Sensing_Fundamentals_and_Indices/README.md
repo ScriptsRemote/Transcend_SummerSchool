@@ -23,7 +23,7 @@
 
 Análisis de la dinámica temporal de los cuerpos de agua superficiales mediante productos satelitales globales. Ejercicio práctico utilizando el conjunto de datos JRC Global Surface Water para explorar y caracterizar los cambios históricos en la extensión y permanencia del agua superficial.
 
-[Descargar material del ejercicio (PDF)](./articulo_jrc.pdf)
+[Descargar artículo del producto JRC (PDF)](./articulo_jrc.pdf)
 
 ### 2. Water Quality Proxies
 
