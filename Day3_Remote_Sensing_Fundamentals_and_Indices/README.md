@@ -12,6 +12,7 @@
 | 10:40 - 12:10 | [`02_water_quality_proxies.ipynb`](02_water_quality_proxies.ipynb) | Sebastian, Christhian Cunha | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day3_Remote_Sensing_Fundamentals_and_Indices/02_water_quality_proxies.ipynb) | — |
 | 14:00 - 15:30 | [`03_satellite_altimetry_shallow_lakes.ipynb`](03_satellite_altimetry_shallow_lakes.ipynb) | Sebastian | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day3_Remote_Sensing_Fundamentals_and_Indices/03_satellite_altimetry_shallow_lakes.ipynb) | — |
 | 15:40 - 17:10 | [`04_digital_image_processing_in_gee.ipynb`](04_digital_image_processing_in_gee.ipynb) | Christhian Cunha, Sebastian | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day3_Remote_Sensing_Fundamentals_and_Indices/04_digital_image_processing_in_gee.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day3_Remote_Sensing_Fundamentals_and_Indices/04_digital_image_processing_in_gee_es.ipynb) |
+| Complementario | [`05_poopo_water_extent_timelapse_es.ipynb`](05_poopo_water_extent_timelapse_es.ipynb) | Christhian Cunha, Sebastian | — | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day3_Remote_Sensing_Fundamentals_and_Indices/05_poopo_water_extent_timelapse_es.ipynb) |
 
 ## Detalle / Detail
 
@@ -52,6 +53,14 @@ Análisis de la dinámica de lagos someros mediante observaciones de la misión 
 `15:40 - 17:10` · Christhian Cunha, Sebastian
 
 Introducción al procesamiento digital de imágenes satelitales mediante Google Earth Engine (GEE). Ejercicio práctico para explorar colecciones de imágenes y sus metadatos, realizar ajustes de visualización, generar composiciones de bandas, calcular índices espectrales y aplicar técnicas de análisis espacial, incluyendo estadísticas zonales y clasificación mediante umbrales.
+
+### 5. Poopó Water Extent Timelapse (GIF)
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day3_Remote_Sensing_Fundamentals_and_Indices/05_poopo_water_extent_timelapse_es.ipynb)
+
+`Complementario` · Christhian Cunha, Sebastian
+
+Reconstrucción de 40 años (1985-2025) de la lámina de agua del Lago Poopó (Bolivia) con Landsat 5, 7, 8 y 9 en Google Earth Engine. Ejercicio práctico para unir colecciones multisensor, detectar agua con el índice MNDWI, construir compuestos anuales, calcular el área de agua por año y generar una animación GIF que combina el mapa con la serie temporal de área.
 
 ## Datos / Data
 
