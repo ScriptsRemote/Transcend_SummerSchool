@@ -1,51 +1,33 @@
 # Day 5 — Soil Monitoring & Irrigation Efficiency
 
-**2026-10-16 (Friday / Viernes)** · IIAREN / PROSUCO
+**2026-10-16 (Friday / Viernes)** · Gavi Alavi / PROSUCO
 
-> Predictive soil salinity models + automated drip irrigation and water-use efficiency
+> Monitoreo y eficiencia de riego + riego inteligente en cultivos de quinua
 
 ## Sesiones / Sessions
 
-| Horario | Notebook | Instructores | Colab |
+| Horario | Sesión | Instructores | Colab |
 |---|---|---|---|
-| 09:00 - 10:30 | [`01_soil_salinity_models_part1_fundamentals.ipynb`](01_soil_salinity_models_part1_fundamentals.ipynb) | Fanny, Laboratorio IIAREN | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day5_Soil_Monitoring_and_Irrigation_Efficiency/01_soil_salinity_models_part1_fundamentals.ipynb) |
-| 10:40 - 12:10 | [`02_soil_salinity_models_part2_validation.ipynb`](02_soil_salinity_models_part2_validation.ipynb) | Fanny, Laboratorio IIAREN | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day5_Soil_Monitoring_and_Irrigation_Efficiency/02_soil_salinity_models_part2_validation.ipynb) |
-| 14:00 - 15:30 | [`03_automated_drip_irrigation_system.ipynb`](03_automated_drip_irrigation_system.ipynb) | Laboratorio de posgrado IIAREN | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day5_Soil_Monitoring_and_Irrigation_Efficiency/03_automated_drip_irrigation_system.ipynb) |
-| 15:40 - 17:10 | [`04_integration_and_water_use_efficiency.ipynb`](04_integration_and_water_use_efficiency.ipynb) | TBD | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day5_Soil_Monitoring_and_Irrigation_Efficiency/04_integration_and_water_use_efficiency.ipynb) |
+| 09:00 - 12:10 | [1. Monitoreo y eficiencia de riego](01_soil_salinity_models_part1_fundamentals.ipynb) | Gavi Alavi | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day5_Soil_Monitoring_and_Irrigation_Efficiency/01_soil_salinity_models_part1_fundamentals.ipynb) |
+| 14:00 - 15:30 | [2. Riego inteligente en cultivos de quinua](02_soil_salinity_models_part2_validation.ipynb) | PROSUCO | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day5_Soil_Monitoring_and_Irrigation_Efficiency/02_soil_salinity_models_part2_validation.ipynb) |
 
 ## Detalle / Detail
 
-### 1. Soil Salinity Models part 1 Fundamentals
+### 1. Monitoreo y eficiencia de riego
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day5_Soil_Monitoring_and_Irrigation_Efficiency/01_soil_salinity_models_part1_fundamentals.ipynb)
 
-`09:00 - 10:30` · Fanny, Laboratorio IIAREN
+`09:00 - 12:10` · a cargo de Gavi Alavi
 
-Desarrollo de modelos predictivos de Salinidad de suelos agrícolas arados con información satelital y muestreos de campo (parte 1 – fundamentos y datos)
+Notebook: [`01_soil_salinity_models_part1_fundamentals.ipynb`](01_soil_salinity_models_part1_fundamentals.ipynb)
 
-### 2. Soil Salinity Models part 2 Validation
+### 2. Riego inteligente en cultivos de quinua
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day5_Soil_Monitoring_and_Irrigation_Efficiency/02_soil_salinity_models_part2_validation.ipynb)
 
-`10:40 - 12:10` · Fanny, Laboratorio IIAREN
+`14:00 - 15:30` · a cargo de PROSUCO
 
-Continuación modelos predictivos de salinidad (parte 2 – desarrollo, validación y aplicación práctica)
-
-### 3. Automated Drip Irrigation System
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day5_Soil_Monitoring_and_Irrigation_Efficiency/03_automated_drip_irrigation_system.ipynb)
-
-`14:00 - 15:30` · Laboratorio de posgrado IIAREN
-
-Sistema Automatizado de Riego por Goteo (PROSUCO – Facultad de Agronomía). Aplicación de agua en etapas fenológicas más sensibles (quinua: floración / llenado de grano). Optimización de recurso hídrico y del tiempo del agricultor mediante riego automático
-
-### 4. Integration and Water Use Efficiency
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ScriptsRemote/Transcend_SummerSchool/blob/main/Day5_Soil_Monitoring_and_Irrigation_Efficiency/04_integration_and_water_use_efficiency.ipynb)
-
-`15:40 - 17:10` · TBD
-
-Cierre práctico: integración de modelos de salinidad + sistema de riego automatizado. Criterios de eficiencia hídrica (AquaCROP), recomendaciones de implementación y discusión final.
+Notebook: [`02_soil_salinity_models_part2_validation.ipynb`](02_soil_salinity_models_part2_validation.ipynb)
 
 ## Datos / Data
 

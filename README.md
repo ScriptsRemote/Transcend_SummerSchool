@@ -61,11 +61,11 @@ SummerSchool/
 
 | Hora | Day 1 · 12 Oct | Day 2 · 13 Oct | Day 3 · 14 Oct | Day 4 · 15 Oct | Day 5 · 16 Oct |
 |---|---|---|---|---|---|
-| | **Hydrology & WEAP**<br>`SEI` | **Hydroeconomics & Water Mapping**<br>`SEI / IMDEA` | **RS Fundamentals & Indices**<br>`UoM` | **LULC & Climate with RS**<br>`UoM` | **Soil & Irrigation Efficiency**<br>`IIAREN / PROSUCO` |
-| 09:00–10:30 | Hydrology fundamentals, WEAP structure | Agricultural demand & economic modeling | Long-term surface water (JRC) | Classification fundamentals | Soil salinity models (part 1) |
-| 10:40–12:10 | Soil-moisture method & calibration | Sensors & spectral behaviour | Water-quality proxies | Building the classification input | Soil salinity models (part 2) |
-| 14:00–15:30 | Climate data & interpolation | Vegetation & water indices | Satellite altimetry | Training, mapping & accuracy | Automated drip irrigation |
-| 15:40–17:10 | WEAP model consolidation | Platforms: GEE, Colab, QGIS | Digital image processing in GEE | Climate products, ET & water balance | Integration & water-use efficiency |
+| | **Hydrology & WEAP**<br>`SEI` | **Hydroeconomics & Water Mapping**<br>`SEI / IMDEA` | **RS Fundamentals & Indices**<br>`UoM` | **LULC & Climate with RS**<br>`UoM` | **Soil & Irrigation Efficiency**<br>`Gavi Alavi / PROSUCO` |
+| 09:00–10:30 | Hydrology fundamentals, WEAP structure | Agricultural demand & economic modeling | Long-term surface water (JRC) | Classification fundamentals | 1. Monitoreo y eficiencia de riego (Gavi Alavi) · 09:00–12:10 |
+| 10:40–12:10 | Soil-moisture method & calibration | Sensors & spectral behaviour | Water-quality proxies | Building the classification input | ↳ continúa sesión 1 |
+| 14:00–15:30 | Climate data & interpolation | Vegetation & water indices | Satellite altimetry | Training, mapping & accuracy | 2. Riego inteligente en cultivos de quinua (PROSUCO) |
+| 15:40–17:10 | WEAP model consolidation | Platforms: GEE, Colab, QGIS | Digital image processing in GEE | Climate products, ET & water balance | — |
 
 Coffee breaks: 10:30–10:40 y 15:30–15:40 · Almuerzo / lunch: 12:10–14:00
 
@@ -87,7 +87,7 @@ Programa completo: [![Open In Colab](https://colab.research.google.com/assets/co
 | 2 · Hydroeconomics & Water Mapping | [README con los 4 botones](Day2_Hydroeconomics_and_Water_Mapping/README.md) |
 | 3 · RS Fundamentals & Indices | [README con los 4 botones](Day3_Remote_Sensing_Fundamentals_and_Indices/README.md) |
 | 4 · LULC & Climate with RS | [README con los 4 botones](Day4_LULC_and_Climate_with_RS/README.md) |
-| 5 · Soil & Irrigation Efficiency | [README con los 4 botones](Day5_Soil_Monitoring_and_Irrigation_Efficiency/README.md) |
+| 5 · Soil & Irrigation Efficiency | [README con los 2 botones](Day5_Soil_Monitoring_and_Irrigation_Efficiency/README.md) |
 
 El patrón del enlace, por si necesita armarlo a mano:
 
@@ -155,7 +155,7 @@ ee.Initialize(project="<tu-cloud-project>")
 | Hidrología / WEAP | Gustavo Ayala, Camilo González (SEI) |
 | Hidroeconomía | Francesco Sapino (IMDEA Agua) |
 | Teledetección | Christhian Cunha, Sebastián Palomino, Tim Foster (UoM) |
-| Suelos y riego | Roberto Miranda, Fanny Arragan Tancara, Wara Yampara (IIAREN–UMSA), PROSUCO |
+| Suelos y riego | Gavi Alavi, Roberto Miranda, Fanny Arragan Tancara, Wara Yampara (IIAREN–UMSA), PROSUCO |
 
 **Audiencia:** ingenieros y profesionales que trabajan o estudian temas relacionados con recursos hídricos (ALT, Univ. Puno, UGCK, UMSA–Facultad de Agronomía, SENAMHI, SENARI, IRD, PROSUCO, entre otros).
 
